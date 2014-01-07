@@ -1,10 +1,29 @@
 package com.everysport.api.domain.api;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class ApiIdEntity extends ApiBaseEntity
 {
 	private Long id;
+    private Set<Link> links;
 
-	public Long getId()
+    public Set<Link> getLinks() {
+        return links;
+    }
+
+    public void setLinks(Set<Link> links) {
+        this.links = links;
+    }
+
+    public void addLink(Link link) {
+        if(links == null) {
+            links = new HashSet<Link>();
+        }
+        links.add(link);
+    }
+
+    public Long getId()
 	{
 		return id;
 	}

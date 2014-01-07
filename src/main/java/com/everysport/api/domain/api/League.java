@@ -1,15 +1,27 @@
 package com.everysport.api.domain.api;
 
+import java.util.Date;
+
 /**
  * Created by Fredrik, 2013-03-13 3:00 PM
  */
 
 public class League extends ApiIdEntity {
 
+
+    /* Used by Reflection in ResourceLinkUtils */
+    public static final String RESOURCE_PATH = "/leagues";
+
     private String name;
+    private String level;
 
     private Sport sport;
     private TeamClass teamClass;
+
+    private Date startDate;
+    private Date endDate;
+
+    private Season season;
 
     public TeamClass getTeamClass() {
         return teamClass;
@@ -23,7 +35,17 @@ public class League extends ApiIdEntity {
         return name;
     }
 
-    public Sport getSport() {
+	public String getLevel()
+	{
+		return level;
+	}
+
+	public void setLevel(String level)
+	{
+		this.level = level;
+	}
+
+	public Sport getSport() {
         return sport;
     }
 
@@ -34,4 +56,33 @@ public class League extends ApiIdEntity {
     public void setTeamClass(TeamClass teamClass) {
         this.teamClass = teamClass;
     }
+
+    public Date getStartDate()
+    {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate)
+    {
+        this.startDate = startDate;
+    }
+
+    public Date getEndDate()
+    {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate)
+    {
+        this.endDate = endDate;
+    }
+
+    public Season getSeason() {
+        return season;
+    }
+
+    public void setSeason(Season season) {
+        this.season = season;
+    }
 }
+

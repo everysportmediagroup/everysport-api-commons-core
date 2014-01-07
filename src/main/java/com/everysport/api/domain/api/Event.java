@@ -5,6 +5,9 @@ import java.util.List;
 
 public class Event extends ApiIdEntity
 {
+    /* Used by Reflection in ResourceLinkUtils */
+    public static final String RESOURCE_PATH = "/events";
+
 	private Date startDate;
 	private Integer round;
     private String fields;
