@@ -4,7 +4,7 @@
 
 	<groupId>com.everysport</groupId>
 	<artifactId>everysport-api-commons-core</artifactId>
-	<version>1.0.5-SNAPSHOT</version>
+	<version>1.0.5</version>
 	<packaging>jar</packaging>
 
     <name>Everysport API Commons Core</name>
@@ -21,7 +21,7 @@
         <connection>scm:git:git@github.com:menmo/everysport-api-commons-core.git</connection>
         <developerConnection>scm:git:git@github.com:menmo/everysport-api-commons-core.git</developerConnection>
         <url>scm:git:git@github.com:menmo/everysport-api-commons-core.git</url>
-    <tag>everysport-api-commons-core-1.0.4</tag>
+    <tag>everysport-api-commons-core-1.0.5</tag>
   </scm>
     <developers>
         <developer>
