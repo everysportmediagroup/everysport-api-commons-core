@@ -2,11 +2,13 @@ everysport-api-commons-core
 ===========================
 
 ## Maven
+See http://search.maven.org/ for latest version
+
 ```
 <dependency>
     <groupId>com.everysport</groupId>
     <artifactId>everysport-api-commons-core</artifactId>
-    <version>1.0.1</version>
+    <version>${es.commons.version}</version>
 </dependency>
 ```
 
