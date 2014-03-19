@@ -1,6 +1,7 @@
 package com.everysport.api.domain.api;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by Fredrik, 2013-03-13 3:00 PM
@@ -22,6 +23,7 @@ public class League extends ApiIdEntity {
     private Date endDate;
 
     private Season season;
+    private List<Group> groups;
 
     public TeamClass getTeamClass() {
         return teamClass;
@@ -83,6 +85,14 @@ public class League extends ApiIdEntity {
 
     public void setSeason(Season season) {
         this.season = season;
+    }
+
+    public List<Group> getGroups() {
+        return groups;
+    }
+
+    public void setGroups(List<Group> groups) {
+        this.groups = groups;
     }
 }
 
