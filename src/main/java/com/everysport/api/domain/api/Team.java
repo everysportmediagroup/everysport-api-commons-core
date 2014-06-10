@@ -6,6 +6,7 @@ public class Team extends ApiIdEntity
 	private String shortName;
 	private String abbreviation;
 	private String link;
+    private Municipality municipality;
 
 	public String getName()
 	{
@@ -46,4 +47,12 @@ public class Team extends ApiIdEntity
 	{
 		this.link = link;
 	}
+
+    public Municipality getMunicipality() {
+        return municipality;
+    }
+
+    public void setMunicipality(Municipality municipality) {
+        this.municipality = municipality;
+    }
 }
