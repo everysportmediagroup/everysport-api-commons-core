@@ -15,6 +15,8 @@ public class GameEvent extends ApiBaseEntity {
     private Integer penaltyShot;
     private Player player;
     private List<Player> assistingPlayers;
+    private Player inPlayer;
+    private Player outPlayer;
     private PenaltyType penaltyType;
     private GameEventLevel level;
 
@@ -105,7 +107,24 @@ public class GameEvent extends ApiBaseEntity {
         }
 
         this.assistingPlayers.add(player);
+    }
 
+    public Player getInPlayer() {
+        return inPlayer;
+    }
+
+    public void setInPlayer(Player inPlayer) {
+        this.inPlayer = inPlayer;
+    }
+
+    public Player getOutPlayer()
+    {
+        return outPlayer;
+    }
+
+    public void setOutPlayer(Player outPlayer)
+    {
+        this.outPlayer = outPlayer;
     }
 
     public PenaltyType getPenaltyType() {
