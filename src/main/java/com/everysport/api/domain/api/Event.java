@@ -22,6 +22,7 @@ public class Event extends ApiIdEntity
     private List<GameEvent> gameEvents;
 	private List<SubGame> subGames;
     private List<PeriodResult> periodResults;
+    private CurrentPeriod currentPeriod;
 
 	public Date getStartDate()
 	{
@@ -153,4 +154,12 @@ public class Event extends ApiIdEntity
 	{
 		this.subGames = subGames;
 	}
+
+    public CurrentPeriod getCurrentPeriod() {
+        return currentPeriod;
+    }
+
+    public void setCurrentPeriod(CurrentPeriod currentPeriod) {
+        this.currentPeriod = currentPeriod;
+    }
 }
