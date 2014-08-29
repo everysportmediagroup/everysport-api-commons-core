@@ -6,15 +6,15 @@ import java.util.Map;
 
 public class GroupedEventsResponse extends ApiListResponse
 {
-	private Map<String, List<Event>> events = new HashMap<>();
+    private List<Map<String, Object>> groupedEvents = new LinkedList<>();
 
-	public Map<String, List<Event>> getEvents()
-	{
-		return events;
-	}
+    public List<Map<String, Object>> getGroupedEvents()
+    {
+        return groupedEvents;
+    }
 
-	public void setEvents(Map<String, List<Event>> events)
-	{
-		this.events = events;
-	}
+    public void setGroupedEvents(List<Map<String, Object>> groupedEvents)
+    {
+        this.groupedEvents = groupedEvents;
+    }
 }
