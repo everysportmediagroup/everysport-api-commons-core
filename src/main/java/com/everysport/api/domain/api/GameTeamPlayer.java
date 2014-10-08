@@ -5,6 +5,7 @@ public class GameTeamPlayer extends Player {
     private Team team;
     private Integer number;
     private Integer position;
+    private Boolean substitute;
 
     public Team getTeam() {
         return team;
@@ -28,5 +29,13 @@ public class GameTeamPlayer extends Player {
 
     public void setPosition(Integer position) {
         this.position = position;
+    }
+
+    public Boolean getSubstitute() {
+        return substitute;
+    }
+
+    public void setSubstitute(Boolean substitute) {
+        this.substitute = substitute;
     }
 }
