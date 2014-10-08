@@ -8,6 +8,7 @@ public class CurrentPeriod implements Serializable
     private Date periodStart;
     private Integer period;
     private CurrentPeriodType periodType;
+    private String text;
 
     public Date getPeriodStart()
     {
@@ -37,5 +38,13 @@ public class CurrentPeriod implements Serializable
     public void setPeriodType(CurrentPeriodType periodType)
     {
         this.periodType = periodType;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public String getText() {
+        return text;
     }
 }
