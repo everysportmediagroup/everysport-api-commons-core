@@ -17,6 +17,7 @@ public class League extends ApiIdEntity {
     private String level;
 
     private Sport sport;
+    private Category category;
     private TeamClass teamClass;
 
     private Date startDate;
@@ -104,4 +105,8 @@ public class League extends ApiIdEntity {
     public void setLiveScore(Boolean liveScore) {
         this.liveScore = liveScore;
     }
+
+    public Category getCategory() { return category; }
+
+    public void setCategory(Category category) { this.category = category; }
 }
