@@ -7,11 +7,11 @@ public class Standings extends ApiBaseEntity
 {
 	private Team team;
 
-	private List<PositionStatus> positionStatuses = new LinkedList<>();
+	private List<PositionStatus> positionStatuses = new LinkedList<PositionStatus>();
 
 	private Integer lineThicknessBelow;
 
-	private List<TeamStats> stats = new LinkedList<>();
+	private List<TeamStats> stats = new LinkedList<TeamStats>();
 
 	public Team getTeam()
 	{

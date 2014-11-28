@@ -5,7 +5,7 @@ import java.util.List;
 
 public class SportsResponse extends ApiListResponse
 {
-	private List<Sport> sports = new LinkedList<>();
+	private List<Sport> sports = new LinkedList<Sport>();
 
     public SportsResponse(List<Sport> sports) {
         this.sports = sports;

@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class CategoriesResponse extends ApiListResponse {
-    private List<Category> categories = new LinkedList<>();
+    private List<Category> categories = new LinkedList<Category>();
 
     public CategoriesResponse() {
     }

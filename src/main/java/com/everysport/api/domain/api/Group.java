@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Group extends ApiBaseEntity
 {
-	private List<Label> labels = new LinkedList<>();
+	private List<Label> labels = new LinkedList<Label>();
 
-	private List<Standings> standings = new LinkedList<>();
+	private List<Standings> standings = new LinkedList<Standings>();
 
 	public List<Standings> getStandings()
 	{

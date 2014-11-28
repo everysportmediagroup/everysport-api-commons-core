@@ -5,9 +5,9 @@ import java.util.List;
 
 public class TrendGroup extends ApiBaseEntity
 {
-	private List<Label> labels = new LinkedList<>();
+	private List<Label> labels = new LinkedList<Label>();
 
-	private List<StandingsTrend> standings = new LinkedList<>();
+	private List<StandingsTrend> standings = new LinkedList<StandingsTrend>();
 
     public List<StandingsTrend> getStandings() {
         return standings;

@@ -103,7 +103,7 @@ public class GameEvent extends ApiBaseEntity {
     public void addAssistingPlayer(Player player) {
 
         if(this.assistingPlayers == null) {
-            this.assistingPlayers = new LinkedList<>();
+            this.assistingPlayers = new LinkedList<Player>();
         }
 
         this.assistingPlayers.add(player);
