@@ -6,9 +6,9 @@ import java.util.List;
 public class StandingsTrend extends ApiBaseEntity {
     private Team team;
 
-    private List<TeamStats> stats = new LinkedList<>();
+    private List<TeamStats> stats = new LinkedList<TeamStats>();
 
-    private List<Result> results = new LinkedList<>();
+    private List<Result> results = new LinkedList<Result>();
 
     public List<TeamStats> getStats() {
         return stats;

@@ -12,7 +12,7 @@ public class SubGame extends ApiBaseEntity
 	private Player homeTeamPlayer;
 	private Player visitingTeamPlayer;
 
-	private List<Score> setScores = new LinkedList<>();
+	private List<Score> setScores = new LinkedList<Score>();
 
 	public Integer getGameNumber()
 	{

@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class SportSettingsMapResponse extends ApiBaseResponse
 {
-	private Map<Long, SportSettings> sportSettings = new HashMap<>();
+	private Map<Long, SportSettings> sportSettings = new HashMap<Long, SportSettings>();
 
     public SportSettingsMapResponse(Map<Long, SportSettings> sportSettings) {
         this.sportSettings = sportSettings;

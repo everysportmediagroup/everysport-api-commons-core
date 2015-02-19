@@ -5,7 +5,7 @@ import java.util.List;
 
 public class StandingsResponse extends ApiBaseResponse
 {
-	private List<Group> groups = new LinkedList<>();
+	private List<Group> groups = new LinkedList<Group>();
 
 	public List<Group> getGroups()
 	{
