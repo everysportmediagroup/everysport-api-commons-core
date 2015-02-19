@@ -19,6 +19,7 @@ public class GameEvent extends ApiBaseEntity {
     private Player outPlayer;
     private PenaltyType penaltyType;
     private GameEventLevel level;
+    private PeriodResult periodResult;
 
     public Team getTeam() {
         return team;
@@ -141,5 +142,13 @@ public class GameEvent extends ApiBaseEntity {
 
     public void setLevel(GameEventLevel level) {
         this.level = level;
+    }
+
+    public void setPeriodResult(PeriodResult periodResult) {
+        this.periodResult = periodResult;
+    }
+
+    public PeriodResult getPeriodResult() {
+        return periodResult;
     }
 }

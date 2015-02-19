@@ -27,6 +27,7 @@ public class League extends ApiIdEntity {
     private List<Group> groups;
 
     private Boolean liveScore;
+    private String years;
 
     public TeamClass getTeamClass() {
         return teamClass;
@@ -109,4 +110,12 @@ public class League extends ApiIdEntity {
     public Category getCategory() { return category; }
 
     public void setCategory(Category category) { this.category = category; }
+
+    public void setYears(String years) {
+        this.years = years;
+    }
+
+    public String getYears() {
+        return years;
+    }
 }
