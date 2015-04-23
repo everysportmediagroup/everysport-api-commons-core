@@ -5,6 +5,7 @@ public class SportSettings extends ApiIdEntity
     private Integer numberOfPeriods;
     private Integer periodLengthInMinutes;
     private Boolean continuousClock;
+    private Integer totalMatchLengthInMinutes;
 
     public Integer getNumberOfPeriods() {
         return numberOfPeriods;
@@ -28,5 +29,13 @@ public class SportSettings extends ApiIdEntity
 
     public void setContinuousClock(Boolean continuousClock) {
         this.continuousClock = continuousClock;
+    }
+
+    public Integer getTotalMatchLengthInMinutes() {
+        return totalMatchLengthInMinutes;
+    }
+
+    public void setTotalMatchLengthInMinutes(Integer totalMatchLengthInMinutes) {
+        this.totalMatchLengthInMinutes = totalMatchLengthInMinutes;
     }
 }
