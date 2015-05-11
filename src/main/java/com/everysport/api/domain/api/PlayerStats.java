@@ -1,15 +1,15 @@
 package com.everysport.api.domain.api;
 
-public class Scorer extends Player {
-    private Integer goals;
+public class PlayerStats extends Player {
+    private Integer count;
     private Team team;
 
-    public Integer getGoals() {
-        return goals;
+    public Integer getCount() {
+        return count;
     }
 
-    public void setGoals(Integer goals) {
-        this.goals = goals;
+    public void setCount(Integer count) {
+        this.count = count;
     }
 
     public Team getTeam() {
