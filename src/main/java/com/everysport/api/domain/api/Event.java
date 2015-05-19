@@ -25,6 +25,7 @@ public class Event extends ApiIdEntity
     private CurrentPeriod currentPeriod;
     private List<GameTeamPlayer> homeTeamLineup;
     private List<GameTeamPlayer> visitingTeamLineup;
+    private boolean liveScore;
 
 	public Date getStartDate()
 	{
@@ -179,5 +180,13 @@ public class Event extends ApiIdEntity
 
     public void setVisitingTeamLineup(List<GameTeamPlayer> visitingTeamLineup) {
         this.visitingTeamLineup = visitingTeamLineup;
+    }
+
+    public boolean getLiveScore() {
+        return liveScore;
+    }
+
+    public void setLiveScore(boolean liveScore) {
+        this.liveScore = liveScore;
     }
 }
