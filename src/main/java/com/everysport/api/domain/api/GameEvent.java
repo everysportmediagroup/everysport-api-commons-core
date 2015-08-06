@@ -20,6 +20,8 @@ public class GameEvent extends ApiBaseEntity {
     private PenaltyType penaltyType;
     private GameEventLevel level;
     private PeriodResult periodResult;
+    private String text;
+    private String imageUrl;
 
     public Team getTeam() {
         return team;
@@ -150,5 +152,21 @@ public class GameEvent extends ApiBaseEntity {
 
     public PeriodResult getPeriodResult() {
         return periodResult;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
     }
 }
