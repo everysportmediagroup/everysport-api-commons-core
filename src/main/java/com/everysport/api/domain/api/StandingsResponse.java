@@ -6,6 +6,7 @@ import java.util.List;
 public class StandingsResponse extends ApiBaseResponse
 {
 	private List<Group> groups = new LinkedList<Group>();
+	private Boolean livetable;
 
 	public List<Group> getGroups()
 	{
@@ -15,5 +16,13 @@ public class StandingsResponse extends ApiBaseResponse
 	public void setGroups(List<Group> groups)
 	{
 		this.groups = groups;
+	}
+
+	public void setLivetable(Boolean livetable) {
+		this.livetable = livetable;
+	}
+
+	public Boolean getLivetable() {
+		return livetable;
 	}
 }
