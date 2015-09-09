@@ -59,8 +59,8 @@ public class Standings extends ApiBaseEntity
 
 	public Integer getPreviousPosition() { return previousPosition; }
 
-	public void setPreviousPosition(Integer position) {
-		this.previousPosition = position;
+	public void setPreviousPosition(Integer previousPosition) {
+		this.previousPosition = previousPosition;
 	}
 
 	public void setLive(Boolean live) {
@@ -70,8 +70,5 @@ public class Standings extends ApiBaseEntity
 	public Boolean getLive() {
 		return live;
 	}
-
-	// If game is being played, we need to know if team is advancing (true), having a setback (false) or is unchanged (null)
-	// ToDo: inAdvance
 
 }

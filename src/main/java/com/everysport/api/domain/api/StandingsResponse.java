@@ -6,7 +6,7 @@ import java.util.List;
 public class StandingsResponse extends ApiBaseResponse
 {
 	private List<Group> groups = new LinkedList<Group>();
-	private Boolean livetable;
+	private Boolean liveStandings;
 
 	public List<Group> getGroups()
 	{
@@ -18,11 +18,11 @@ public class StandingsResponse extends ApiBaseResponse
 		this.groups = groups;
 	}
 
-	public void setLivetable(Boolean livetable) {
-		this.livetable = livetable;
+	public void setliveStandings(Boolean liveStandings) {
+		this.liveStandings = liveStandings;
 	}
 
-	public Boolean getLivetable() {
-		return livetable;
+	public Boolean getliveStandings() {
+		return liveStandings;
 	}
 }
