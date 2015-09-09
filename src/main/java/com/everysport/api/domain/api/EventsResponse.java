@@ -5,7 +5,7 @@ import java.util.List;
 
 public class EventsResponse extends ApiListResponse
 {
-	private List<Event> events = new LinkedList<>();
+	private List<Event> events = new LinkedList<Event>();
 
 	public List<Event> getEvents()
 	{

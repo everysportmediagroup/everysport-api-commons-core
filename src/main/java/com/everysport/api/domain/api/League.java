@@ -17,6 +17,7 @@ public class League extends ApiIdEntity {
     private String level;
 
     private Sport sport;
+    private Category category;
     private TeamClass teamClass;
 
     private Date startDate;
@@ -24,6 +25,9 @@ public class League extends ApiIdEntity {
 
     private Season season;
     private List<Group> groups;
+
+    private Boolean liveScore;
+    private String years;
 
     public TeamClass getTeamClass() {
         return teamClass;
@@ -94,5 +98,24 @@ public class League extends ApiIdEntity {
     public void setGroups(List<Group> groups) {
         this.groups = groups;
     }
-}
 
+    public Boolean getLiveScore() {
+        return liveScore;
+    }
+
+    public void setLiveScore(Boolean liveScore) {
+        this.liveScore = liveScore;
+    }
+
+    public Category getCategory() { return category; }
+
+    public void setCategory(Category category) { this.category = category; }
+
+    public void setYears(String years) {
+        this.years = years;
+    }
+
+    public String getYears() {
+        return years;
+    }
+}

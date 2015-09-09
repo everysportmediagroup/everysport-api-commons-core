@@ -19,6 +19,9 @@ public class GameEvent extends ApiBaseEntity {
     private Player outPlayer;
     private PenaltyType penaltyType;
     private GameEventLevel level;
+    private PeriodResult periodResult;
+    private String text;
+    private String imageUrl;
 
     public Team getTeam() {
         return team;
@@ -103,7 +106,7 @@ public class GameEvent extends ApiBaseEntity {
     public void addAssistingPlayer(Player player) {
 
         if(this.assistingPlayers == null) {
-            this.assistingPlayers = new LinkedList<>();
+            this.assistingPlayers = new LinkedList<Player>();
         }
 
         this.assistingPlayers.add(player);
@@ -141,5 +144,29 @@ public class GameEvent extends ApiBaseEntity {
 
     public void setLevel(GameEventLevel level) {
         this.level = level;
+    }
+
+    public void setPeriodResult(PeriodResult periodResult) {
+        this.periodResult = periodResult;
+    }
+
+    public PeriodResult getPeriodResult() {
+        return periodResult;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
     }
 }

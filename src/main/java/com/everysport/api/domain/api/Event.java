@@ -23,6 +23,9 @@ public class Event extends ApiIdEntity
 	private List<SubGame> subGames;
     private List<PeriodResult> periodResults;
     private CurrentPeriod currentPeriod;
+    private List<GameTeamPlayer> homeTeamLineup;
+    private List<GameTeamPlayer> visitingTeamLineup;
+    private boolean liveScore;
 
 	public Date getStartDate()
 	{
@@ -161,5 +164,29 @@ public class Event extends ApiIdEntity
 
     public void setCurrentPeriod(CurrentPeriod currentPeriod) {
         this.currentPeriod = currentPeriod;
+    }
+
+    public List<GameTeamPlayer> getHomeTeamLineup() {
+        return homeTeamLineup;
+    }
+
+    public void setHomeTeamLineup(List<GameTeamPlayer> homeTeamLineup) {
+        this.homeTeamLineup = homeTeamLineup;
+    }
+
+    public List<GameTeamPlayer> getVisitingTeamLineup() {
+        return visitingTeamLineup;
+    }
+
+    public void setVisitingTeamLineup(List<GameTeamPlayer> visitingTeamLineup) {
+        this.visitingTeamLineup = visitingTeamLineup;
+    }
+
+    public boolean getLiveScore() {
+        return liveScore;
+    }
+
+    public void setLiveScore(boolean liveScore) {
+        this.liveScore = liveScore;
     }
 }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class StandingsTrendResponse extends ApiBaseResponse
 {
-	private List<TrendGroup> groups = new LinkedList<>();
+	private List<TrendGroup> groups = new LinkedList<TrendGroup>();
 
 	public List<TrendGroup> getGroups()
 	{

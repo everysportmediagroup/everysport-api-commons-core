@@ -6,7 +6,7 @@ import java.util.Map;
 public abstract class ApiBaseResponse extends ApiBaseEntity
 {
 	private Credit credit = null;
-	private Map<String, Object> metadata = new HashMap<>();
+	private Map<String, Object> metadata = new HashMap<String, Object>();
 
 	public Credit getCredit()
 	{

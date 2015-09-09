@@ -11,7 +11,7 @@ import java.util.List;
 public class LeaguesResponse extends ApiListResponse
 {
 
-    private List<League> leagues = new LinkedList<>();
+    private List<League> leagues = new LinkedList<League>();
 
     public LeaguesResponse() {
     }

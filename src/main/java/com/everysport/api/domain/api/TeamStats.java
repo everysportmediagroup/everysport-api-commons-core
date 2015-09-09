@@ -4,12 +4,12 @@ public class TeamStats extends ApiBaseEntity
 {
 	private String name;
 
-	private Integer value;
+	private String value;
 
     private TeamStats() {
     }
 
-    public TeamStats(String name, Integer value)
+    public TeamStats(String name, String value)
 	{
 		this.name = name;
 		this.value = value;
@@ -25,7 +25,7 @@ public class TeamStats extends ApiBaseEntity
 		this.name = name;
 	}
 
-	public Integer getValue()
+	public String getValue()
 	{
 		return value;
 	}
