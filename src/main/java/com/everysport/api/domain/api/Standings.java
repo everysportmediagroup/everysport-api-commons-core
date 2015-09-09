@@ -13,6 +13,10 @@ public class Standings extends ApiBaseEntity
 
 	private List<TeamStats> stats = new LinkedList<TeamStats>();
 
+	private Integer previousPosition;
+
+	private Boolean live;
+
 	public Team getTeam()
 	{
 		return team;
@@ -52,4 +56,22 @@ public class Standings extends ApiBaseEntity
 	{
 		this.stats = stats;
 	}
+
+	public Integer getPreviousPosition() { return previousPosition; }
+
+	public void setPreviousPosition(Integer position) {
+		this.previousPosition = position;
+	}
+
+	public void setLive(Boolean live) {
+		this.live = live;
+	}
+
+	public Boolean getLive() {
+		return live;
+	}
+
+	// If game is being played, we need to know if team is advancing (true), having a setback (false) or is unchanged (null)
+	// ToDo: inAdvance
+
 }
