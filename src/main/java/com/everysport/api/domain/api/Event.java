@@ -16,6 +16,8 @@ public class Event extends ApiIdEntity
 	private Team visitingTeam;
 	private Integer homeTeamScore;
 	private Integer visitingTeamScore;
+	private Integer homeTeamPoints;
+	private Integer visitingTeamPoints;
 	private EventFinishedTimeStatus finishedTimeStatus;
     private League league;
     private EventFacts facts;
@@ -105,6 +107,26 @@ public class Event extends ApiIdEntity
 	public void setVisitingTeamScore(Integer visitingTeamScore)
 	{
 		this.visitingTeamScore = visitingTeamScore;
+	}
+
+	public Integer getVisitingTeamPoints()
+	{
+		return visitingTeamPoints;
+	}
+
+	public void setVisitingTeamPoints(Integer visitingTeamPoints)
+	{
+		this.visitingTeamPoints = visitingTeamPoints;
+	}
+
+	public Integer getHomeTeamPoints()
+	{
+		return homeTeamPoints;
+	}
+
+	public void setHomeTeamPoints(Integer homeTeamPoints)
+	{
+		this.homeTeamPoints = homeTeamPoints;
 	}
 
 	public EventFinishedTimeStatus getFinishedTimeStatus()
