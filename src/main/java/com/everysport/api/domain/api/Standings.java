@@ -13,6 +13,8 @@ public class Standings extends ApiBaseEntity
 
 	private List<TeamStats> stats = new LinkedList<TeamStats>();
 
+	private Integer position;
+
 	private Integer previousPosition;
 
 	private Boolean live;
@@ -55,6 +57,16 @@ public class Standings extends ApiBaseEntity
 	public void setStats(List<TeamStats> stats)
 	{
 		this.stats = stats;
+	}
+
+	public Integer getPosition()
+	{
+		return position;
+	}
+
+	public void setPosition(Integer position)
+	{
+		this.position = position;
 	}
 
 	public Integer getPreviousPosition() { return previousPosition; }
