@@ -15,10 +15,12 @@ public class League extends ApiIdEntity {
 
     private String name;
     private String level;
+    private Long levelId;
 
     private Sport sport;
     private Category category;
     private TeamClass teamClass;
+    private Integer teamClassId;
 
     private Date startDate;
     private Date endDate;
@@ -51,7 +53,17 @@ public class League extends ApiIdEntity {
 		this.level = level;
 	}
 
-	public Sport getSport() {
+    public Long getLevelId()
+    {
+        return levelId;
+    }
+
+    public void setLevelId(Long levelId)
+    {
+        this.levelId = levelId;
+    }
+
+    public Sport getSport() {
         return sport;
     }
 
@@ -117,5 +129,15 @@ public class League extends ApiIdEntity {
 
     public String getYears() {
         return years;
+    }
+
+    public void setTeamClassId(Integer teamClassId)
+    {
+        this.teamClassId = teamClassId;
+    }
+
+    public Integer getTeamClassId()
+    {
+        return teamClassId;
     }
 }
