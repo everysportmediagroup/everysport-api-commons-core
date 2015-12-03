@@ -5,6 +5,8 @@ public class Team extends ApiIdEntity
 	private String name;
 	private String shortName;
 	private String abbreviation;
+	private String articleName;
+	private String articleShortName;
 	private String link;
     private Municipality municipality;
 
@@ -55,4 +57,20 @@ public class Team extends ApiIdEntity
     public void setMunicipality(Municipality municipality) {
         this.municipality = municipality;
     }
+
+	public String getArticleName() {
+		return articleName;
+	}
+
+	public void setArticleName(String articleName) {
+		this.articleName = articleName;
+	}
+
+	public String getArticleShortName() {
+		return articleShortName;
+	}
+
+	public void setArticleShortName(String articleShortName) {
+		this.articleShortName = articleShortName;
+	}
 }
