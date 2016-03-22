@@ -5,8 +5,17 @@ import java.util.List;
 
 public class StandingsResponse extends ApiBaseResponse
 {
+	private League league;
 	private List<Group> groups = new LinkedList<Group>();
 	private Boolean liveStandings;
+
+	public League getLeague() {
+		return league;
+	}
+
+	public void setLeague(League league) {
+		this.league = league;
+	}
 
 	public List<Group> getGroups()
 	{
@@ -18,11 +27,11 @@ public class StandingsResponse extends ApiBaseResponse
 		this.groups = groups;
 	}
 
-	public void setliveStandings(Boolean liveStandings) {
+	public void setLiveStandings(Boolean liveStandings) {
 		this.liveStandings = liveStandings;
 	}
 
-	public Boolean getliveStandings() {
+	public Boolean getLiveStandings() {
 		return liveStandings;
 	}
 }

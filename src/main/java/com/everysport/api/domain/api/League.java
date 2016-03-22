@@ -9,10 +9,10 @@ import java.util.List;
 
 public class League extends ApiIdEntity {
 
-
     /* Used by Reflection in ResourceLinkUtils */
     public static final String RESOURCE_PATH = "/leagues";
 
+    private Integer immutableId;
     private String name;
     private String level;
     private Long levelId;
@@ -31,8 +31,12 @@ public class League extends ApiIdEntity {
     private Boolean liveScore;
     private String years;
 
-    public TeamClass getTeamClass() {
-        return teamClass;
+    public Integer getImmutableId() {
+        return immutableId;
+    }
+
+    public void setImmutableId(Integer immutableId) {
+        this.immutableId = immutableId;
     }
 
     public void setName(String name) {
@@ -69,6 +73,10 @@ public class League extends ApiIdEntity {
 
     public void setSport(Sport sport) {
         this.sport = sport;
+    }
+
+    public TeamClass getTeamClass() {
+        return teamClass;
     }
 
     public void setTeamClass(TeamClass teamClass) {
