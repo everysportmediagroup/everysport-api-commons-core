@@ -9,6 +9,7 @@ public class Team extends ApiIdEntity
 	private String articleShortName;
 	private String link;
     private Municipality municipality;
+	private Boolean facts;
 
 	public String getName()
 	{
@@ -72,5 +73,13 @@ public class Team extends ApiIdEntity
 
 	public void setArticleShortName(String articleShortName) {
 		this.articleShortName = articleShortName;
+	}
+
+	public Boolean getFacts() {
+		return facts;
+	}
+
+	public void setFacts(Boolean facts) {
+		this.facts = facts;
 	}
 }
