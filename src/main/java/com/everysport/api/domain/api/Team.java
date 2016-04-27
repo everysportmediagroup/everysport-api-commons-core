@@ -1,8 +1,6 @@
 package com.everysport.api.domain.api;
 
-public class Team extends ApiIdEntity
-{
-	private String name;
+public class Team extends ApiNamedEntity {
 	private String shortName;
 	private String abbreviation;
 	private String articleName;
@@ -10,16 +8,6 @@ public class Team extends ApiIdEntity
 	private String link;
     private Municipality municipality;
 	private Boolean facts;
-
-	public String getName()
-	{
-		return name;
-	}
-
-	public void setName(String name)
-	{
-		this.name = name;
-	}
 
 	public String getShortName()
 	{

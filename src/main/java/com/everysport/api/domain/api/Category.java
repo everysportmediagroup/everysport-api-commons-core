@@ -1,17 +1,8 @@
 package com.everysport.api.domain.api;
 
-public class Category extends ApiIdEntity {
+public class Category extends ApiNamedEntity {
 
-    private String name;
     private Sport sport;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public Sport getSport() {
         return sport;

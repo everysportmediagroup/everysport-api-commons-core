@@ -7,13 +7,12 @@ import java.util.List;
  * Created by Fredrik, 2013-03-13 3:00 PM
  */
 
-public class League extends ApiIdEntity {
+public class League extends ApiNamedEntity {
 
     /* Used by Reflection in ResourceLinkUtils */
     public static final String RESOURCE_PATH = "/leagues";
 
     private Integer immutableId;
-    private String name;
     private String level;
     private Long levelId;
 
@@ -37,14 +36,6 @@ public class League extends ApiIdEntity {
 
     public void setImmutableId(Integer immutableId) {
         this.immutableId = immutableId;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
     }
 
 	public String getLevel()
