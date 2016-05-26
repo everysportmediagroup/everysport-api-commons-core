@@ -6,6 +6,7 @@ public class Team extends ApiNamedEntity {
 	private String articleName;
 	private String articleShortName;
 	private String link;
+	private Sport sport;
     private Municipality municipality;
 	private Boolean facts;
 
@@ -39,7 +40,15 @@ public class Team extends ApiNamedEntity {
 		this.link = link;
 	}
 
-    public Municipality getMunicipality() {
+	public Sport getSport() {
+		return sport;
+	}
+
+	public void setSport(Sport sport) {
+		this.sport = sport;
+	}
+
+	public Municipality getMunicipality() {
         return municipality;
     }
 
