@@ -6,6 +6,7 @@ public class PositionStatus implements Serializable
 {
 	private String type;
 	private String name;
+	private Integer destinationCompetitionId;
 
 	public String getName()
 	{
@@ -27,37 +28,32 @@ public class PositionStatus implements Serializable
 		this.type = type;
 	}
 
-	@Override
-	public boolean equals(Object o)
-	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (o == null || getClass() != o.getClass())
-		{
-			return false;
-		}
+	public Integer getDestinationCompetitionId() {
+		return destinationCompetitionId;
+	}
 
-		PositionStatus positionStatus = (PositionStatus) o;
-
-		if (name != null ? !name.equals(positionStatus.name) : positionStatus.name != null)
-		{
-			return false;
-		}
-		if (type != null ? !type.equals(positionStatus.type) : positionStatus.type != null)
-		{
-			return false;
-		}
-
-		return true;
+	public void setDestinationCompetitionId(Integer destinationCompetitionId) {
+		this.destinationCompetitionId = destinationCompetitionId;
 	}
 
 	@Override
-	public int hashCode()
-	{
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+
+		PositionStatus that = (PositionStatus) o;
+
+		if (type != null ? !type.equals(that.type) : that.type != null) return false;
+		if (name != null ? !name.equals(that.name) : that.name != null) return false;
+		return destinationCompetitionId != null ? destinationCompetitionId.equals(that.destinationCompetitionId) : that.destinationCompetitionId == null;
+
+	}
+
+	@Override
+	public int hashCode() {
 		int result = type != null ? type.hashCode() : 0;
 		result = 31 * result + (name != null ? name.hashCode() : 0);
+		result = 31 * result + (destinationCompetitionId != null ? destinationCompetitionId.hashCode() : 0);
 		return result;
 	}
 }
