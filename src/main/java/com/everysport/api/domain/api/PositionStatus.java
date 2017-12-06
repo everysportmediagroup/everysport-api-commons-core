@@ -45,7 +45,7 @@ public class PositionStatus implements Serializable
 
 		if (type != null ? !type.equals(that.type) : that.type != null) return false;
 		if (name != null ? !name.equals(that.name) : that.name != null) return false;
-		return destinationLeagueId != null ? destinationLeagueId.equals(that.destinationLeagueId) : that.destinationCompetitionId == null;
+		return destinationLeagueId != null ? destinationLeagueId.equals(that.destinationLeagueId) : that.destinationLeagueId == null;
 
 	}
 
