@@ -7,6 +7,7 @@ public class PositionStatus implements Serializable
 	private String type;
 	private String name;
 	private Integer destinationLeagueId;
+	private String destinationLeagueName;
 
 	public String getName()
 	{
@@ -36,6 +37,14 @@ public class PositionStatus implements Serializable
 		this.destinationLeagueId = destinationCompetitionId;
 	}
 
+	public String getDestinationLeagueName() {
+		return destinationLeagueName;
+	}
+
+	public void setDestinationLeagueName(String destinationLeagueName) {
+		this.destinationLeagueName = destinationLeagueName;
+	}
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -45,7 +54,8 @@ public class PositionStatus implements Serializable
 
 		if (type != null ? !type.equals(that.type) : that.type != null) return false;
 		if (name != null ? !name.equals(that.name) : that.name != null) return false;
-		return destinationLeagueId != null ? destinationLeagueId.equals(that.destinationLeagueId) : that.destinationLeagueId == null;
+		if (destinationLeagueId != null ? !destinationLeagueId.equals(that.destinationLeagueId) : that.destinationLeagueId != null) return false;
+		return destinationLeagueName != null ? destinationLeagueName.equals(that.destinationLeagueName) : that.destinationLeagueName == null;
 
 	}
 
@@ -54,6 +64,8 @@ public class PositionStatus implements Serializable
 		int result = type != null ? type.hashCode() : 0;
 		result = 31 * result + (name != null ? name.hashCode() : 0);
 		result = 31 * result + (destinationLeagueId != null ? destinationLeagueId.hashCode() : 0);
+		result = 31 * result + (destinationLeagueName != null ? destinationLeagueName.hashCode() : 0);
 		return result;
 	}
+
 }
