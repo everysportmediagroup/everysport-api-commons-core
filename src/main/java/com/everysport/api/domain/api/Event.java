@@ -18,6 +18,7 @@ public class Event extends ApiIdEntity
 	private Integer visitingTeamScore;
 	private Integer homeTeamPoints;
 	private Integer visitingTeamPoints;
+	private Integer highestPossibleTeamPoints;
 	private EventFinishedTimeStatus finishedTimeStatus;
     private League league;
     private EventFacts facts;
@@ -127,6 +128,16 @@ public class Event extends ApiIdEntity
 	public void setHomeTeamPoints(Integer homeTeamPoints)
 	{
 		this.homeTeamPoints = homeTeamPoints;
+	}
+	
+	public Integer getHighestPossibleTeamPoints()
+	{
+		return highestPossibleTeamPoints;
+	}
+
+	public void setHighestPossibleTeamPoints(Integer highestPossibleTeamPoints)
+	{
+		this.highestPossibleTeamPoints = highestPossibleTeamPoints;
 	}
 
 	public EventFinishedTimeStatus getFinishedTimeStatus()
