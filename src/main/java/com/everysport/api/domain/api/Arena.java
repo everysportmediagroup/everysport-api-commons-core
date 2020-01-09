@@ -17,11 +17,11 @@ public class Arena extends ApiNamedEntity {
         this.articleName = articleName;
     }
 
-    public Coordinates get_Coordinates() {
+    public Coordinates get_coordinates() {
         return _coordinates;
     }
 
-    public void set_Coordinates(Coordinates _coordinates) {
+    public void set_coordinates(Coordinates _coordinates) {
         this._coordinates = _coordinates;
     }
 }
