@@ -7,6 +7,7 @@ package com.everysport.api.domain.api;
  */
 public class Arena extends ApiNamedEntity {
     private String articleName;
+    private Coordinates rt90coordinates;
 
     public String getArticleName() {
         return articleName;
@@ -14,5 +15,13 @@ public class Arena extends ApiNamedEntity {
 
     public void setArticleName(String articleName) {
         this.articleName = articleName;
+    }
+
+    public Coordinates getRt90coordinates() {
+        return rt90coordinates;
+    }
+
+    public void setRt90coordinates(Coordinates rt90coordinates) {
+        this.rt90coordinates = rt90coordinates;
     }
 }

@@ -2,6 +2,7 @@ package com.everysport.api.domain.api;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 public class Event extends ApiIdEntity
 {
@@ -29,6 +30,7 @@ public class Event extends ApiIdEntity
     private List<GameTeamPlayer> homeTeamLineup;
     private List<GameTeamPlayer> visitingTeamLineup;
     private boolean liveScore;
+    private Map oddsTypes;
 
 	public Date getStartDate()
 	{
@@ -222,4 +224,12 @@ public class Event extends ApiIdEntity
     public void setLiveScore(boolean liveScore) {
         this.liveScore = liveScore;
     }
+
+	public Map getOddsTypes() {
+		return oddsTypes;
+	}
+
+	public void setOddsTypes(Map oddsTypes) {
+		this.oddsTypes = oddsTypes;
+	}
 }
