@@ -1,54 +1,49 @@
 package com.everysport.api.domain.api;
 
 public class Team extends ApiNamedEntity {
-	private String shortName;
-	private String abbreviation;
-	private String articleName;
-	private String articleShortName;
-	private String link;
-	private Sport sport;
+    private String shortName;
+    private String abbreviation;
+    private String articleName;
+    private String articleShortName;
+    private String link;
+    private String logo;
+    private Sport sport;
     private Municipality municipality;
-	private Boolean facts;
+    private Boolean facts;
 
-	public String getShortName()
-	{
-		return shortName;
-	}
+    public String getShortName() {
+        return shortName;
+    }
 
-	public void setShortName(String shortName)
-	{
-		this.shortName = shortName;
-	}
+    public void setShortName(String shortName) {
+        this.shortName = shortName;
+    }
 
-	public String getAbbreviation()
-	{
-		return abbreviation;
-	}
+    public String getAbbreviation() {
+        return abbreviation;
+    }
 
-	public void setAbbreviation(String abbreviation)
-	{
-		this.abbreviation = abbreviation;
-	}
+    public void setAbbreviation(String abbreviation) {
+        this.abbreviation = abbreviation;
+    }
 
-	public String getLink()
-	{
-		return link;
-	}
+    public String getLink() {
+        return link;
+    }
 
-	public void setLink(String link)
-	{
-		this.link = link;
-	}
+    public void setLink(String link) {
+        this.link = link;
+    }
 
-	public Sport getSport() {
-		return sport;
-	}
+    public Sport getSport() {
+        return sport;
+    }
 
-	public void setSport(Sport sport) {
-		this.sport = sport;
-	}
+    public void setSport(Sport sport) {
+        this.sport = sport;
+    }
 
-	public Municipality getMunicipality() {
+    public Municipality getMunicipality() {
         return municipality;
     }
 
@@ -56,27 +51,35 @@ public class Team extends ApiNamedEntity {
         this.municipality = municipality;
     }
 
-	public String getArticleName() {
-		return articleName;
-	}
+    public String getArticleName() {
+        return articleName;
+    }
 
-	public void setArticleName(String articleName) {
-		this.articleName = articleName;
-	}
+    public void setArticleName(String articleName) {
+        this.articleName = articleName;
+    }
 
-	public String getArticleShortName() {
-		return articleShortName;
-	}
+    public String getArticleShortName() {
+        return articleShortName;
+    }
 
-	public void setArticleShortName(String articleShortName) {
-		this.articleShortName = articleShortName;
-	}
+    public void setArticleShortName(String articleShortName) {
+        this.articleShortName = articleShortName;
+    }
 
-	public Boolean getFacts() {
-		return facts;
-	}
+    public Boolean getFacts() {
+        return facts;
+    }
 
-	public void setFacts(Boolean facts) {
-		this.facts = facts;
-	}
+    public void setFacts(Boolean facts) {
+        this.facts = facts;
+    }
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
 }
