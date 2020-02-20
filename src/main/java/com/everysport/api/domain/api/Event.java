@@ -27,12 +27,12 @@ public class Event extends ApiIdEntity
 	private List<SubGame> subGames;
     private List<PeriodResult> periodResults;
     private CurrentPeriod currentPeriod;
+    private String homeTeamFormation;
     private List<GameTeamPlayer> homeTeamLineup;
+    private String awayTeamFormation;
     private List<GameTeamPlayer> visitingTeamLineup;
     private boolean liveScore;
     private Map oddsTypes;
-	private String homeTeamFormation;
-	private String awayTeamFormation;
 
 	public Date getStartDate()
 	{
