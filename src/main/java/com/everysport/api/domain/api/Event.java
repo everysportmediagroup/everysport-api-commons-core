@@ -31,6 +31,8 @@ public class Event extends ApiIdEntity
     private List<GameTeamPlayer> visitingTeamLineup;
     private boolean liveScore;
     private Map oddsTypes;
+	private String homeTeamFormation;
+	private String awayTeamFormation;
 
 	public Date getStartDate()
 	{
@@ -231,5 +233,21 @@ public class Event extends ApiIdEntity
 
 	public void setOddsTypes(Map oddsTypes) {
 		this.oddsTypes = oddsTypes;
+	}
+
+    public void setHomeTeamFormation(String homeTeamFormation) {
+        this.homeTeamFormation = homeTeamFormation;
+    }
+
+    public String getHomeTeamFormation() {
+        return homeTeamFormation;
+    }
+
+	public void setAwayTeamFormation(String awayTeamFormation) {
+		this.awayTeamFormation = awayTeamFormation;
+	}
+
+	public String getAwayTeamFormation() {
+		return awayTeamFormation;
 	}
 }
