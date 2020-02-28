@@ -1,13 +1,13 @@
 package com.everysport.api.domain.api;
 
 public class Player extends ApiBaseEntity {
-    private Integer id;
+    private String id;
     private String name;
 
     public Player() {
     }
 
-    public Player(Integer id, String name) {
+    public Player(String id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -16,11 +16,11 @@ public class Player extends ApiBaseEntity {
         this.name = name;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
