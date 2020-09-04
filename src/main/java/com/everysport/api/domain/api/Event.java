@@ -27,6 +27,7 @@ public class Event extends ApiIdEntity
 	private List<SubGame> subGames;
     private List<PeriodResult> periodResults;
     private CurrentPeriod currentPeriod;
+    private EventStatistics statistics;
     private String homeTeamFormation;
     private List<GameTeamPlayer> homeTeamLineup;
     private String awayTeamFormation;
@@ -203,7 +204,15 @@ public class Event extends ApiIdEntity
         this.currentPeriod = currentPeriod;
     }
 
-    public List<GameTeamPlayer> getHomeTeamLineup() {
+	public EventStatistics getStatistics() {
+		return statistics;
+	}
+
+	public void setStatistics(EventStatistics statistics) {
+		this.statistics = statistics;
+	}
+
+	public List<GameTeamPlayer> getHomeTeamLineup() {
         return homeTeamLineup;
     }
 
