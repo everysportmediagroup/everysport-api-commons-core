@@ -29,7 +29,6 @@ public class League extends ApiNamedEntity {
     private List<Team> teams;	
 
     private Boolean liveScore;
-    private List<String> liveScoreEventData;
     private String years;
 
     public Integer getImmutableId() {
@@ -148,13 +147,5 @@ public class League extends ApiNamedEntity {
     public Integer getTeamClassId()
     {
         return teamClassId;
-    }
-
-    public List<String> getLiveScoreEventData() {
-        return liveScoreEventData;
-    }
-
-    public void setLiveScoreEventData(List<String> liveScoreEventData) {
-        this.liveScoreEventData = liveScoreEventData;
     }
 }

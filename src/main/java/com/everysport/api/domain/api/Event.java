@@ -33,6 +33,7 @@ public class Event extends ApiIdEntity
     private String awayTeamFormation;
     private List<GameTeamPlayer> visitingTeamLineup;
     private boolean liveScore;
+	private List<String> liveScoreFactTypes;
     private Map oddsTypes;
 
 	public Date getStartDate()
@@ -258,5 +259,13 @@ public class Event extends ApiIdEntity
 
 	public String getAwayTeamFormation() {
 		return awayTeamFormation;
+	}
+
+	public List<String> getLiveScoreFactTypes() {
+		return liveScoreFactTypes;
+	}
+
+	public void setLiveScoreFactTypes(List<String> liveScoreFactTypes) {
+		this.liveScoreFactTypes = liveScoreFactTypes;
 	}
 }
