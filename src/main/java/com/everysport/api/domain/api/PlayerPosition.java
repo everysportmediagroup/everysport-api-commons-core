@@ -1,6 +1,8 @@
 package com.everysport.api.domain.api;
 
-public class PlayerPosition {
+import java.io.Serializable;
+
+public class PlayerPosition implements Serializable {
     private String type;
     private String name;
 
