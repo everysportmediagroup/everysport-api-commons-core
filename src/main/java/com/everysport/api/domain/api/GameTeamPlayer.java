@@ -3,6 +3,7 @@ package com.everysport.api.domain.api;
 public class GameTeamPlayer extends Player {
 
     private Team team;
+    private PlayerPosition playerPosition;
     private Integer number;
     private Integer position;
     private Boolean substitute;
@@ -13,6 +14,14 @@ public class GameTeamPlayer extends Player {
 
     public void setTeam(Team team) {
         this.team = team;
+    }
+
+    public PlayerPosition getPlayerPosition() {
+        return playerPosition;
+    }
+
+    public void setPlayerPosition(PlayerPosition playerPosition) {
+        this.playerPosition = playerPosition;
     }
 
     public Integer getNumber() {
