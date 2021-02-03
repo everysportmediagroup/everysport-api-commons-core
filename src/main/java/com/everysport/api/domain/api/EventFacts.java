@@ -10,6 +10,7 @@ import java.util.List;
 public class EventFacts extends ApiBaseEntity {
     private List<String> referees;
     private String shots;
+    private String penalties;
     private Arena arena;
     private Integer spectators;
 
@@ -27,6 +28,14 @@ public class EventFacts extends ApiBaseEntity {
 
     public void setShots(String shots) {
         this.shots = shots;
+    }
+
+    public String getPenalties() {
+        return penalties;
+    }
+
+    public void setPenalties(String penalties) {
+        this.penalties = penalties;
     }
 
     public Arena getArena() {
