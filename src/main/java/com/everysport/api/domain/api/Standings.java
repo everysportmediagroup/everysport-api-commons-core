@@ -15,6 +15,8 @@ public class Standings extends ApiBaseEntity
 
 	private Integer position;
 
+	private List<Event> latestEvents;
+
 	private Integer previousPosition;
 
 	private Boolean live;
@@ -67,6 +69,14 @@ public class Standings extends ApiBaseEntity
 	public void setPosition(Integer position)
 	{
 		this.position = position;
+	}
+
+	public List<Event> getLatestEvents() {
+		return latestEvents;
+	}
+
+	public void setLatestEvents(List<Event> latestEvents) {
+		this.latestEvents = latestEvents;
 	}
 
 	public Integer getPreviousPosition() { return previousPosition; }
