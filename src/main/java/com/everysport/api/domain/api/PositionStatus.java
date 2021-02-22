@@ -6,8 +6,9 @@ public class PositionStatus implements Serializable
 {
 	private String type;
 	private String name;
-	private Integer destinationLeagueId;
+	private League destinationLeague;
 	private String destinationLeagueName;
+	private Integer destinationLeagueId;
 
 	public String getName()
 	{
@@ -29,12 +30,12 @@ public class PositionStatus implements Serializable
 		this.type = type;
 	}
 
-	public Integer getDestinationLeagueId() {
-		return destinationLeagueId;
+	public League getDestinationLeague() {
+		return destinationLeague;
 	}
 
-	public void setDestinationLeagueId(Integer destinationCompetitionId) {
-		this.destinationLeagueId = destinationCompetitionId;
+	public void setDestinationLeague(League destinationLeague) {
+		this.destinationLeague = destinationLeague;
 	}
 
 	public String getDestinationLeagueName() {
@@ -43,6 +44,14 @@ public class PositionStatus implements Serializable
 
 	public void setDestinationLeagueName(String destinationLeagueName) {
 		this.destinationLeagueName = destinationLeagueName;
+	}
+
+	public Integer getDestinationLeagueId() {
+		return destinationLeagueId;
+	}
+
+	public void setDestinationLeagueId(Integer destinationCompetitionId) {
+		this.destinationLeagueId = destinationCompetitionId;
 	}
 
 	@Override
@@ -54,6 +63,7 @@ public class PositionStatus implements Serializable
 
 		if (type != null ? !type.equals(that.type) : that.type != null) return false;
 		if (name != null ? !name.equals(that.name) : that.name != null) return false;
+		if (destinationLeague != null ? !destinationLeague.equals(that.destinationLeague) : that.destinationLeague != null) return false;
 		if (destinationLeagueId != null ? !destinationLeagueId.equals(that.destinationLeagueId) : that.destinationLeagueId != null) return false;
 		return destinationLeagueName != null ? destinationLeagueName.equals(that.destinationLeagueName) : that.destinationLeagueName == null;
 
@@ -63,6 +73,7 @@ public class PositionStatus implements Serializable
 	public int hashCode() {
 		int result = type != null ? type.hashCode() : 0;
 		result = 31 * result + (name != null ? name.hashCode() : 0);
+		result = 31 * result + (destinationLeague != null ? destinationLeague.hashCode() : 0);
 		result = 31 * result + (destinationLeagueId != null ? destinationLeagueId.hashCode() : 0);
 		result = 31 * result + (destinationLeagueName != null ? destinationLeagueName.hashCode() : 0);
 		return result;
