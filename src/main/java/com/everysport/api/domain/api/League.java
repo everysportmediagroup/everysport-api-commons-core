@@ -30,6 +30,7 @@ public class League extends ApiNamedEntity {
 
     private Boolean liveScore;
     private String years;
+    private Boolean hasStandings;
 
     public Integer getImmutableId() {
         return immutableId;
@@ -147,5 +148,13 @@ public class League extends ApiNamedEntity {
     public Integer getTeamClassId()
     {
         return teamClassId;
+    }
+
+    public Boolean getHasStandings() {
+        return hasStandings;
+    }
+
+    public void setHasStandings(Boolean hasStandings) {
+        this.hasStandings = hasStandings;
     }
 }
