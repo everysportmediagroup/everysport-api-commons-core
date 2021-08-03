@@ -2,7 +2,7 @@ package com.everysport.api.domain.api;
 
 public class PlayerStats extends Player {
     private Integer count;
-    private Integer playedGames;
+    private Integer gamesPlayed;
     private Team team;
 
     public Integer getCount() {
@@ -13,12 +13,12 @@ public class PlayerStats extends Player {
         this.count = count;
     }
 
-    public Integer getPlayedGames() {
-        return playedGames;
+    public Integer getGamesPlayed() {
+        return gamesPlayed;
     }
 
-    public void setPlayedGames(Integer playedGames) {
-        this.playedGames = playedGames;
+    public void setGamesPlayed(Integer gamesPlayed) {
+        this.gamesPlayed = gamesPlayed;
     }
 
     public Team getTeam() {
