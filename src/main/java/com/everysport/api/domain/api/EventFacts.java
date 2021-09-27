@@ -12,6 +12,7 @@ public class EventFacts extends ApiBaseEntity {
     private String shots;
     private String numberOfPenalties;
     private Arena arena;
+    private String city;
     private Integer spectators;
 
     public List<String> getReferees() {
@@ -44,6 +45,14 @@ public class EventFacts extends ApiBaseEntity {
 
     public void setArena(Arena arena) {
         this.arena = arena;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public Integer getSpectators() {

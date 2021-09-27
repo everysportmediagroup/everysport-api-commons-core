@@ -9,6 +9,7 @@ public class Arena extends ApiNamedEntity {
     private String articleName;
     private Coordinates rt90coordinates;
     private Position position;
+    private String city;
 
     public String getArticleName() {
         return articleName;
@@ -32,5 +33,13 @@ public class Arena extends ApiNamedEntity {
 
     public void setPosition(Position position) {
         this.position = position;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 }
