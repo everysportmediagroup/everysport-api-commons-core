@@ -35,6 +35,7 @@ public class Event extends ApiIdEntity
     private boolean liveScore;
 	private List<String> liveScoreFactTypes;
     private Map oddsTypes;
+	private String externalId;
 
 	public Date getStartDate()
 	{
@@ -268,4 +269,12 @@ public class Event extends ApiIdEntity
 	public void setLiveScoreFactTypes(List<String> liveScoreFactTypes) {
 		this.liveScoreFactTypes = liveScoreFactTypes;
 	}
+
+    public void setExternalId(String externalId) {
+        this.externalId = externalId;
+    }
+
+    public String getExternalId() {
+        return externalId;
+    }
 }
