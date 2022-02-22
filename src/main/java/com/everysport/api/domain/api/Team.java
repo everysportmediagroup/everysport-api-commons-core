@@ -8,6 +8,8 @@ public class Team extends ApiNamedEntity {
     private String link;
     private String logo;
     private Sport sport;
+    private TeamClass teamClass;
+    private Integer teamClassId;
     private Arena arena;
     private Municipality municipality;
     private Boolean facts;
@@ -42,6 +44,22 @@ public class Team extends ApiNamedEntity {
 
     public void setSport(Sport sport) {
         this.sport = sport;
+    }
+
+    public TeamClass getTeamClass() {
+        return teamClass;
+    }
+
+    public void setTeamClass(TeamClass teamClass) {
+        this.teamClass = teamClass;
+    }
+
+    public Integer getTeamClassId() {
+        return teamClassId;
+    }
+
+    public void setTeamClassId(Integer teamClassId) {
+        this.teamClassId = teamClassId;
     }
 
     public Municipality getMunicipality() {
