@@ -7,7 +7,7 @@ public class StandingsResponse extends ApiBaseResponse
 {
 	private League league;
 	private List<Group> groups = new LinkedList<Group>();
-	private List<String> availableGroupTypes = new LinkedList<>();
+	private List<StandingsGroupType> availableGroupTypes = new LinkedList<>();
 	private Boolean liveStandings;
 
 	public League getLeague() {
@@ -28,11 +28,11 @@ public class StandingsResponse extends ApiBaseResponse
 		this.groups = groups;
 	}
 
-	public List<String> getAvailableGroupTypes() {
+	public List<StandingsGroupType> getAvailableGroupTypes() {
 		return availableGroupTypes;
 	}
 
-	public void setAvailableGroupTypes(List<String> availableGroupTypes) {
+	public void setAvailableGroupTypes(List<StandingsGroupType> availableGroupTypes) {
 		this.availableGroupTypes = availableGroupTypes;
 	}
 
