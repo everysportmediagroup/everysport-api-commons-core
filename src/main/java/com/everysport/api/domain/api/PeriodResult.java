@@ -1,6 +1,6 @@
 package com.everysport.api.domain.api;
 
-public class PeriodResult extends ApiBaseEntity {
+public class PeriodResult extends ApiBaseEntity implements Cloneable {
 
     public enum PeriodType {
         ORDINARY, OVERTIME, SHOOTOUT
@@ -66,5 +66,17 @@ public class PeriodResult extends ApiBaseEntity {
 
     public void setType(PeriodType type) {
         this.type = type;
+    }
+
+    @Override
+    public Object clone() {
+        PeriodResult clone = new PeriodResult();
+        clone.setPeriod(this.period);
+        clone.setHomeTeamPeriodScore(this.homeTeamPeriodScore);
+        clone.setVisitingTeamPeriodScore(this.visitingTeamPeriodScore);
+        clone.setHomeTeamScore(this.homeTeamScore);
+        clone.setVisitingTeamScore(this.visitingTeamScore);
+        clone.setType(this.type);
+        return clone;
     }
 }
