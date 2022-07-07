@@ -11,6 +11,7 @@ public class EventStatistics extends ApiBaseEntity {
     private EventStatisticsType goalkeeperSaves;
     private EventStatisticsType goalKicks;
     private EventStatisticsType fouls;
+    private EventStatisticsType injuries;
 
     public EventStatisticsType getBallPossession() {
         return ballPossession;
@@ -90,5 +91,13 @@ public class EventStatistics extends ApiBaseEntity {
 
     public void setFouls(EventStatisticsType fouls) {
         this.fouls = fouls;
+    }
+
+    public EventStatisticsType getInjuries() {
+        return injuries;
+    }
+
+    public void setInjuries(EventStatisticsType injuries) {
+        this.injuries = injuries;
     }
 }
