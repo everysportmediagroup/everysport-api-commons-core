@@ -22,6 +22,7 @@ public class Event extends ApiIdEntity
 	private Integer highestPossibleTeamPoints;
 	private EventFinishedTimeStatus finishedTimeStatus;
     private League league;
+	private boolean neutralGround;
     private EventFacts facts;
     private List<GameEvent> gameEvents;
 	private List<SubGame> subGames;
@@ -166,7 +167,15 @@ public class Event extends ApiIdEntity
         this.league = league;
     }
 
-    public EventFacts getFacts() {
+	public boolean isNeutralGround() {
+		return neutralGround;
+	}
+
+	public void setNeutralGround(boolean neutralGround) {
+		this.neutralGround = neutralGround;
+	}
+
+	public EventFacts getFacts() {
         return facts;
     }
 
