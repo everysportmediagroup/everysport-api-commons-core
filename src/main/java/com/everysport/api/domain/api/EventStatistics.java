@@ -12,6 +12,7 @@ public class EventStatistics extends ApiBaseEntity {
     private EventStatisticsType goalKicks;
     private EventStatisticsType fouls;
     private EventStatisticsType injuries;
+    private EventStatisticsType yellowCards;
     private EventStatisticsType redCards;
     private EventStatisticsType shotsSaved;
     private EventStatisticsType shotsTotal;
@@ -102,6 +103,14 @@ public class EventStatistics extends ApiBaseEntity {
 
     public void setInjuries(EventStatisticsType injuries) {
         this.injuries = injuries;
+    }
+
+    public EventStatisticsType getYellowCards() {
+        return yellowCards;
+    }
+
+    public void setYellowCards(EventStatisticsType yellowCards) {
+        this.yellowCards = yellowCards;
     }
 
     public EventStatisticsType getRedCards() {
