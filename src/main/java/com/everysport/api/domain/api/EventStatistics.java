@@ -14,8 +14,12 @@ public class EventStatistics extends ApiBaseEntity {
     private EventStatisticsType injuries;
     private EventStatisticsType yellowCards;
     private EventStatisticsType redCards;
+    private EventStatisticsType yellowRedCards;
+    private EventStatisticsType cardsGiven;
     private EventStatisticsType shotsSaved;
     private EventStatisticsType shotsTotal;
+    private EventStatisticsType shotsBlocked;
+    private EventStatisticsType substitutions;
 
     public EventStatisticsType getBallPossession() {
         return ballPossession;
@@ -121,6 +125,22 @@ public class EventStatistics extends ApiBaseEntity {
         this.redCards = redCards;
     }
 
+    public EventStatisticsType getYellowRedCards() {
+        return yellowRedCards;
+    }
+
+    public void setYellowRedCards(EventStatisticsType yellowRedCards) {
+        this.yellowRedCards = yellowRedCards;
+    }
+
+    public EventStatisticsType getCardsGiven() {
+        return cardsGiven;
+    }
+
+    public void setCardsGiven(EventStatisticsType cardsGiven) {
+        this.cardsGiven = cardsGiven;
+    }
+
     public EventStatisticsType getShotsSaved() {
         return shotsSaved;
     }
@@ -135,5 +155,21 @@ public class EventStatistics extends ApiBaseEntity {
 
     public void setShotsTotal(EventStatisticsType shotsTotal) {
         this.shotsTotal = shotsTotal;
+    }
+
+    public EventStatisticsType getShotsBlocked() {
+        return shotsBlocked;
+    }
+
+    public void setShotsBlocked(EventStatisticsType shotsBlocked) {
+        this.shotsBlocked = shotsBlocked;
+    }
+
+    public EventStatisticsType getSubstitutions() {
+        return substitutions;
+    }
+
+    public void setSubstitutions(EventStatisticsType substitutions) {
+        this.substitutions = substitutions;
     }
 }
