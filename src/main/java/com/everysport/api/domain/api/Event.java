@@ -35,7 +35,6 @@ public class Event extends ApiIdEntity
     private List<GameTeamPlayer> visitingTeamLineup;
     private boolean liveScore;
 	private List<String> liveScoreFactTypes;
-    private Map oddsTypes;
 	private String source;
 	private String sourceEntityId;
 
@@ -247,14 +246,6 @@ public class Event extends ApiIdEntity
     public void setLiveScore(boolean liveScore) {
         this.liveScore = liveScore;
     }
-
-	public Map getOddsTypes() {
-		return oddsTypes;
-	}
-
-	public void setOddsTypes(Map oddsTypes) {
-		this.oddsTypes = oddsTypes;
-	}
 
     public void setHomeTeamFormation(String homeTeamFormation) {
         this.homeTeamFormation = homeTeamFormation;
