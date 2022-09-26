@@ -20,6 +20,7 @@ public class EventStatistics extends ApiBaseEntity {
     private EventStatisticsType shotsTotal;
     private EventStatisticsType shotsBlocked;
     private EventStatisticsType substitutions;
+    private EventStatisticsType penaltiesMissed;
 
     public EventStatisticsType getBallPossession() {
         return ballPossession;
@@ -171,5 +172,13 @@ public class EventStatistics extends ApiBaseEntity {
 
     public void setSubstitutions(EventStatisticsType substitutions) {
         this.substitutions = substitutions;
+    }
+
+    public EventStatisticsType getPenaltiesMissed() {
+        return penaltiesMissed;
+    }
+
+    public void setPenaltiesMissed(EventStatisticsType penaltiesMissed) {
+        this.penaltiesMissed = penaltiesMissed;
     }
 }
