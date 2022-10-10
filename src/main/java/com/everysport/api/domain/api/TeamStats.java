@@ -8,14 +8,17 @@ public class TeamStats extends ApiBaseEntity
 
 	private String value;
 
+	private Boolean primarySorting;
+
     private TeamStats() {
     }
 
-    public TeamStats(String groupType, String name, String value)
+    public TeamStats(String groupType, String name, String value, Boolean primarySorting)
 	{
 		this.groupType = groupType;
 		this.name = name;
 		this.value = value;
+		this.primarySorting = primarySorting;
 	}
 
 	public String getGroupType() {
@@ -39,5 +42,13 @@ public class TeamStats extends ApiBaseEntity
 	public String getValue()
 	{
 		return value;
+	}
+
+	public Boolean getPrimarySorting() {
+		return primarySorting;
+	}
+
+	public void setPrimarySorting(Boolean primarySorting) {
+		this.primarySorting = primarySorting;
 	}
 }
