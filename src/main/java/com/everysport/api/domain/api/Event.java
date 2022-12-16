@@ -20,6 +20,7 @@ public class Event extends ApiIdEntity
 	private Integer homeTeamPoints;
 	private Integer visitingTeamPoints;
 	private Integer highestPossibleTeamPoints;
+	private Integer pointsFactor;
 	private EventFinishedTimeStatus finishedTimeStatus;
     private League league;
 	private boolean neutralGround;
@@ -147,6 +148,14 @@ public class Event extends ApiIdEntity
 	public void setHighestPossibleTeamPoints(Integer highestPossibleTeamPoints)
 	{
 		this.highestPossibleTeamPoints = highestPossibleTeamPoints;
+	}
+
+	public Integer getPointsFactor() {
+		return pointsFactor;
+	}
+
+	public void setPointsFactor(Integer pointsFactor) {
+		this.pointsFactor = pointsFactor;
 	}
 
 	public EventFinishedTimeStatus getFinishedTimeStatus()
