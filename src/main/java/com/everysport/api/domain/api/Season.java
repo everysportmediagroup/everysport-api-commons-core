@@ -6,6 +6,7 @@ import java.util.Objects;
 public class Season implements Serializable {
 
     private String name;
+    private String slug;
     private Integer startYear;
     private Integer endYear;
 
@@ -15,6 +16,14 @@ public class Season implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getSlug() {
+        return slug;
+    }
+
+    public void setSlug(String slug) {
+        this.slug = slug;
     }
 
     public Integer getStartYear() {
