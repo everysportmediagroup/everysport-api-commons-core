@@ -13,6 +13,7 @@ public class GameEvent extends ApiBaseEntity {
     private Integer second;
     private GameEventType type;
     private Integer penaltyShot;
+    private Boolean ownGoal;
     private Player player;
     private List<Player> assistingPlayers;
     private Player inPlayer;
@@ -85,6 +86,14 @@ public class GameEvent extends ApiBaseEntity {
 
     public void setPenaltyShot(Integer penaltyShot) {
         this.penaltyShot = penaltyShot;
+    }
+
+    public Boolean getOwnGoal() {
+        return ownGoal;
+    }
+
+    public void setOwnGoal(Boolean ownGoal) {
+        this.ownGoal = ownGoal;
     }
 
     public Player getPlayer() {
