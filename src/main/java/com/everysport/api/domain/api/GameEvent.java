@@ -18,6 +18,7 @@ public class GameEvent extends ApiBaseEntity {
     private List<Player> assistingPlayers;
     private Player inPlayer;
     private Player outPlayer;
+    private GoalType goalType;
     private PenaltyType penaltyType;
     private GameEventLevel level;
     private PeriodResult periodResult;
@@ -78,6 +79,14 @@ public class GameEvent extends ApiBaseEntity {
 
     public void setType(GameEventType type) {
         this.type = type;
+    }
+
+    public GoalType getGoalType() {
+        return goalType;
+    }
+
+    public void setGoalType(GoalType goalType) {
+        this.goalType = goalType;
     }
 
     public Integer getPenaltyShot() {
