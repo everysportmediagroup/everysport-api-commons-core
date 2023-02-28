@@ -12,14 +12,14 @@ public class GameEvent extends ApiBaseEntity {
     private Integer minute;
     private Integer second;
     private GameEventType type;
+    private GoalType goalType;
+    private PenaltyType penaltyType;
     private Integer penaltyShot;
     private Boolean ownGoal;
     private Player player;
     private List<Player> assistingPlayers;
     private Player inPlayer;
     private Player outPlayer;
-    private GoalType goalType;
-    private PenaltyType penaltyType;
     private GameEventLevel level;
     private PeriodResult periodResult;
     private String text;
