@@ -7,6 +7,7 @@ public class Team extends ApiNamedEntity {
     private String articleShortName;
     private String link;
     private String logo;
+    private String logoSmall;
     private Sport sport;
     private TeamClass teamClass;
     private Integer teamClassId;
@@ -100,6 +101,14 @@ public class Team extends ApiNamedEntity {
 
     public void setLogo(String logo) {
         this.logo = logo;
+    }
+
+    public String getLogoSmall() {
+        return logoSmall;
+    }
+
+    public void setLogoSmall(String logoSmall) {
+        this.logoSmall = logoSmall;
     }
 
     public Arena getArena() {
