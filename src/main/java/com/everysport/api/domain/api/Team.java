@@ -1,5 +1,7 @@
 package com.everysport.api.domain.api;
 
+import java.util.Map;
+
 public class Team extends ApiNamedEntity {
     private String shortName;
     private String abbreviation;
@@ -7,7 +9,7 @@ public class Team extends ApiNamedEntity {
     private String articleShortName;
     private String link;
     private String logo;
-    private String logoSmall;
+    private Map<String, String> logos;
     private Sport sport;
     private TeamClass teamClass;
     private Integer teamClassId;
@@ -103,12 +105,12 @@ public class Team extends ApiNamedEntity {
         this.logo = logo;
     }
 
-    public String getLogoSmall() {
-        return logoSmall;
+    public Map<String, String> getLogos() {
+        return logos;
     }
 
-    public void setLogoSmall(String logoSmall) {
-        this.logoSmall = logoSmall;
+    public void setLogos(Map<String, String> logos) {
+        this.logos = logos;
     }
 
     public Arena getArena() {
