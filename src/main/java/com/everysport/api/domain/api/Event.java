@@ -32,6 +32,7 @@ public class Event extends ApiIdEntity
     private EventStatistics statistics;
     private String homeTeamFormation;
     private List<GameTeamPlayer> homeTeamLineup;
+    private String visitingTeamFormation;
     private String awayTeamFormation;
     private List<GameTeamPlayer> visitingTeamLineup;
     private Map<String, List<Map<String, Object>>> oddsTypes;
@@ -273,8 +274,13 @@ public class Event extends ApiIdEntity
         return homeTeamFormation;
     }
 
-	public void setAwayTeamFormation(String awayTeamFormation) {
-		this.awayTeamFormation = awayTeamFormation;
+	public String getVisitingTeamFormation() {
+		return visitingTeamFormation;
+	}
+
+	public void setVisitingTeamFormation(String visitingTeamFormation) {
+		this.visitingTeamFormation = visitingTeamFormation;
+		this.awayTeamFormation = visitingTeamFormation;
 	}
 
 	public String getAwayTeamFormation() {
