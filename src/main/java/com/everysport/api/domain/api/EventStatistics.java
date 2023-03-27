@@ -2,25 +2,44 @@ package com.everysport.api.domain.api;
 
 public class EventStatistics extends ApiBaseEntity {
     private EventStatisticsType ballPossession;
+    private EventStatisticsType puckPossession;
     private EventStatisticsType shotsOnGoal;
     private EventStatisticsType shotsOffGoal;
+    private EventStatisticsType shotsBlocked;
+    private EventStatisticsType shotsSaved;
+    private EventStatisticsType shotsTotal;
+    private EventStatisticsType shotsAgainst;
+    private EventStatisticsType shotAccuracy;
+    private EventStatisticsType goalkeeperSaves;
     private EventStatisticsType freeKicks;
     private EventStatisticsType cornerKicks;
     private EventStatisticsType offsides;
     private EventStatisticsType throwIns;
-    private EventStatisticsType goalkeeperSaves;
     private EventStatisticsType goalKicks;
     private EventStatisticsType fouls;
+    private EventStatisticsType technicalFouls;
     private EventStatisticsType injuries;
+    private EventStatisticsType cardsGiven;
     private EventStatisticsType yellowCards;
     private EventStatisticsType redCards;
     private EventStatisticsType yellowRedCards;
-    private EventStatisticsType cardsGiven;
-    private EventStatisticsType shotsSaved;
-    private EventStatisticsType shotsTotal;
-    private EventStatisticsType shotsBlocked;
-    private EventStatisticsType substitutions;
     private EventStatisticsType penaltiesMissed;
+    private EventStatisticsType penalties;
+    private EventStatisticsType substitutions;
+    private EventStatisticsType shutouts;
+    private EventStatisticsType powerPlays;
+    private EventStatisticsType goals;
+    private EventStatisticsType goalsScored;
+    private EventStatisticsType goalsConceded;
+    private EventStatisticsType penaltyMinutes;
+    private EventStatisticsType goalsInPowerPlay;
+    private EventStatisticsType goalsWhileShortHanded;
+    private EventStatisticsType suspensions;
+    private EventStatisticsType fieldGoals;
+    private EventStatisticsType sevenMGoals;
+    private EventStatisticsType assists;
+    private EventStatisticsType steals;
+    private EventStatisticsType blocks;
 
     public EventStatisticsType getBallPossession() {
         return ballPossession;
@@ -28,6 +47,14 @@ public class EventStatistics extends ApiBaseEntity {
 
     public void setBallPossession(EventStatisticsType ballPossession) {
         this.ballPossession = ballPossession;
+    }
+
+    public EventStatisticsType getPuckPossession() {
+        return puckPossession;
+    }
+
+    public void setPuckPossession(EventStatisticsType puckPossession) {
+        this.puckPossession = puckPossession;
     }
 
     public EventStatisticsType getShotsOnGoal() {
@@ -102,6 +129,14 @@ public class EventStatistics extends ApiBaseEntity {
         this.fouls = fouls;
     }
 
+    public EventStatisticsType getTechnicalFouls() {
+        return technicalFouls;
+    }
+
+    public void setTechnicalFouls(EventStatisticsType technicalFouls) {
+        this.technicalFouls = technicalFouls;
+    }
+
     public EventStatisticsType getInjuries() {
         return injuries;
     }
@@ -166,6 +201,22 @@ public class EventStatistics extends ApiBaseEntity {
         this.shotsBlocked = shotsBlocked;
     }
 
+    public EventStatisticsType getShotsAgainst() {
+        return shotsAgainst;
+    }
+
+    public void setShotsAgainst(EventStatisticsType shotsAgainst) {
+        this.shotsAgainst = shotsAgainst;
+    }
+
+    public EventStatisticsType getShotAccuracy() {
+        return shotAccuracy;
+    }
+
+    public void setShotAccuracy(EventStatisticsType shotAccuracy) {
+        this.shotAccuracy = shotAccuracy;
+    }
+
     public EventStatisticsType getSubstitutions() {
         return substitutions;
     }
@@ -180,5 +231,125 @@ public class EventStatistics extends ApiBaseEntity {
 
     public void setPenaltiesMissed(EventStatisticsType penaltiesMissed) {
         this.penaltiesMissed = penaltiesMissed;
+    }
+
+    public EventStatisticsType getPenalties() {
+        return penalties;
+    }
+
+    public void setPenalties(EventStatisticsType penalties) {
+        this.penalties = penalties;
+    }
+
+    public EventStatisticsType getShutouts() {
+        return shutouts;
+    }
+
+    public void setShutouts(EventStatisticsType shutouts) {
+        this.shutouts = shutouts;
+    }
+
+    public EventStatisticsType getPowerPlays() {
+        return powerPlays;
+    }
+
+    public void setPowerPlays(EventStatisticsType powerPlays) {
+        this.powerPlays = powerPlays;
+    }
+
+    public EventStatisticsType getGoals() {
+        return goals;
+    }
+
+    public void setGoals(EventStatisticsType goals) {
+        this.goals = goals;
+    }
+
+    public EventStatisticsType getGoalsScored() {
+        return goalsScored;
+    }
+
+    public void setGoalsScored(EventStatisticsType goalsScored) {
+        this.goalsScored = goalsScored;
+    }
+
+    public EventStatisticsType getGoalsConceded() {
+        return goalsConceded;
+    }
+
+    public void setGoalsConceded(EventStatisticsType goalsConceded) {
+        this.goalsConceded = goalsConceded;
+    }
+
+    public EventStatisticsType getPenaltyMinutes() {
+        return penaltyMinutes;
+    }
+
+    public void setPenaltyMinutes(EventStatisticsType penaltyMinutes) {
+        this.penaltyMinutes = penaltyMinutes;
+    }
+
+    public EventStatisticsType getGoalsInPowerPlay() {
+        return goalsInPowerPlay;
+    }
+
+    public void setGoalsInPowerPlay(EventStatisticsType goalsInPowerPlay) {
+        this.goalsInPowerPlay = goalsInPowerPlay;
+    }
+
+    public EventStatisticsType getGoalsWhileShortHanded() {
+        return goalsWhileShortHanded;
+    }
+
+    public void setGoalsWhileShortHanded(EventStatisticsType goalsWhileShortHanded) {
+        this.goalsWhileShortHanded = goalsWhileShortHanded;
+    }
+
+    public EventStatisticsType getSuspensions() {
+        return suspensions;
+    }
+
+    public void setSuspensions(EventStatisticsType suspensions) {
+        this.suspensions = suspensions;
+    }
+
+    public EventStatisticsType getFieldGoals() {
+        return fieldGoals;
+    }
+
+    public void setFieldGoals(EventStatisticsType fieldGoals) {
+        this.fieldGoals = fieldGoals;
+    }
+
+    public EventStatisticsType getSevenMGoals() {
+        return sevenMGoals;
+    }
+
+    public void setSevenMGoals(EventStatisticsType sevenMGoals) {
+        this.sevenMGoals = sevenMGoals;
+    }
+
+    public EventStatisticsType getAssists() {
+        return assists;
+    }
+
+    public void setAssists(EventStatisticsType assists) {
+        this.assists = assists;
+    }
+
+    public EventStatisticsType getSteals() {
+        return steals;
+    }
+
+    public void setSteals(EventStatisticsType steals) {
+        this.steals = steals;
+    }
+
+    public EventStatisticsType getBlocks() {
+        return blocks;
+    }
+
+    public void setBlocks(EventStatisticsType blocks) {
+        this.blocks = blocks;
     }
 }
