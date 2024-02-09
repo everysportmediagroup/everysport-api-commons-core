@@ -15,10 +15,12 @@ public class TeamStats extends ApiBaseEntity
     private TeamStats() {
     }
 
-    public TeamStats(String groupType, String name, String value, Boolean primarySorting)
+    public TeamStats(String groupType, String name, String label, String description, String value, Boolean primarySorting)
 	{
 		this.groupType = groupType;
 		this.name = name;
+		this.label = label;
+		this.description = description;
 		this.value = value;
 		this.primarySorting = primarySorting;
 	}
@@ -45,16 +47,8 @@ public class TeamStats extends ApiBaseEntity
 		return label;
 	}
 
-	public void setLabel(String label) {
-		this.label = label;
-	}
-
 	public String getDescription() {
 		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
 	}
 
 	public String getValue()
