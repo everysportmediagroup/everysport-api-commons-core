@@ -26,6 +26,7 @@ public class League extends ApiNamedEntity {
 
     private Season season;
     private List<Group> groups;
+    private List<SubLeague> subLeagues;
     private List<Team> teams;	
 
     private Boolean liveScore;
@@ -111,7 +112,15 @@ public class League extends ApiNamedEntity {
     public void setGroups(List<Group> groups) {
         this.groups = groups;
     }
-	
+
+    public List<SubLeague> getSubLeagues() {
+        return subLeagues;
+    }
+
+    public void setSubLeagues(List<SubLeague> subLeagues) {
+        this.subLeagues = subLeagues;
+    }
+
     public List<Team> getTeams() {
         return teams;
     }
