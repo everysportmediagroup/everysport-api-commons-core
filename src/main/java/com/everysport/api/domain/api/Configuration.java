@@ -1,15 +1,15 @@
 package com.everysport.api.domain.api;
 
 public class Configuration extends ApiBaseEntity {
-    private String language;
+    private String lang;
     private Boolean homeTeamLast;
 
-    public String getLanguage() {
-        return language;
+    public String getLang() {
+        return lang;
     }
 
-    public void setLanguage(String language) {
-        this.language = language;
+    public void setLang(String lang) {
+        this.lang = lang;
     }
 
     public Boolean getHomeTeamLast() {
