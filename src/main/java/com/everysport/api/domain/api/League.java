@@ -32,6 +32,7 @@ public class League extends ApiNamedEntity {
     private Boolean liveScore;
     private String years;
     private Boolean standings;
+    private Boolean hasSubLeagues;
 
     public Integer getImmutableId() {
         return immutableId;
@@ -165,5 +166,13 @@ public class League extends ApiNamedEntity {
 
     public void setStandings(Boolean standings) {
         this.standings = standings;
+    }
+
+    public Boolean getHasSubLeagues() {
+        return hasSubLeagues;
+    }
+
+    public void setHasSubLeagues(Boolean hasSubLeagues) {
+        this.hasSubLeagues = hasSubLeagues;
     }
 }
