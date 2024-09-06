@@ -2,7 +2,7 @@ package com.everysport.api.domain.api;
 
 public enum TeamClass
 {
-	MEN(1), WOMEN(2), ALL(0), MIXED(3);
+	MEN(1), WOMEN(2), ALL(0), MIXED(3), BOYS(8), GIRLS(8);
 
 	TeamClass(Integer id)
 	{
