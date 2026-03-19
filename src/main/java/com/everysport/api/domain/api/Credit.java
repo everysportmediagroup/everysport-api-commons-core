@@ -1,11 +1,11 @@
 package com.everysport.api.domain.api;
 
-public final class Credit extends ApiBaseEntity
+public class Credit extends ApiBaseEntity
 {
 	private final String message = "Provided by Everysport.com";
 	private final String link = "http://www.everysport.com";
-	//Todo: better logo
 	private final String logoUrl = "http://c.static.es-cdn.net/files/everysport2/images/icons/event/small/everysport.png";
+	private String widgetFooterContent;
 
 	public String getLogoUrl()
 	{
@@ -22,19 +22,13 @@ public final class Credit extends ApiBaseEntity
 		return message;
 	}
 
-	private static Credit instance = null;
-
-	protected Credit()
+	public String getWidgetFooterContent()
 	{
-		// Exists only to defeat instantiation.
+		return widgetFooterContent;
 	}
 
-	public static Credit getInstance()
+	public void setWidgetFooterContent(String widgetFooterContent)
 	{
-		if (instance == null)
-		{
-			instance = new Credit();
-		}
-		return instance;
+		this.widgetFooterContent = widgetFooterContent;
 	}
 }
