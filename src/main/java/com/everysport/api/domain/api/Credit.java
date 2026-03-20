@@ -5,7 +5,6 @@ public class Credit extends ApiBaseEntity
 	private String message;
 	private String link;
 	private String logoUrl;
-	private String widgetFooterContent;
 
 	public String getLogoUrl()
 	{
@@ -35,15 +34,5 @@ public class Credit extends ApiBaseEntity
 	public void setMessage(String message)
 	{
 		this.message = message;
-	}
-
-	public String getWidgetFooterContent()
-	{
-		return widgetFooterContent;
-	}
-
-	public void setWidgetFooterContent(String widgetFooterContent)
-	{
-		this.widgetFooterContent = widgetFooterContent;
 	}
 }
